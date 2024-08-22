@@ -1,0 +1,136 @@
+.calculator-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--white);
+  border-radius: 20px;
+  width: 1008px;
+  min-height: 606px;
+}
+.result{
+  background-color: var(--slate-NF);
+  padding: 2.5rem;
+  border-radius: 0 20px 0 50px;
+}
+.inputs{
+  padding: 2.5rem;
+}
+.mortgage-radio{
+  display: grid;
+  gap: 12px;
+}
+.radio-input{
+  border: 1px solid var(--slate-500);
+  padding: 12px 16px;
+  border-radius: 5px;
+}
+.radio-input input{
+  margin-right: 16px;
+}
+.radio-input:has(input[type="radio"]:checked){
+  border-color: var(--lime);
+  background-color: var(--lime-2);
+}
+.radio-input label{
+  padding-right: 60%;
+}
+.detail-flex{
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--slate-500);
+  border-radius: 5px;
+}
+.detail-flex:has(input[type="number"]:focus){
+  border-color: var(--lime);
+}
+
+.detail-flex span{
+  display: block;
+  background-color: var(--slate-100);
+  padding: 12px 16px;
+  border-radius: 5px;
+}
+.detail-flex span:focus{
+  background-color: var(--lime);
+}
+#btn-reset{
+  background-color: var(--white);
+  border: none;
+  border-bottom: 1px solid var(--slate-700);
+  position: absolute;
+  right: 0px;
+  top: -65px;
+}
+.input-flex{
+  display: flex;
+  max-width: 424px;
+  gap: 24px;
+}
+#btn-submit{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.btn-flex{
+  display: flex;
+  background-color: var(--lime);
+  border: none;
+  border-radius: 30px;
+  padding: 16px 40px;
+  justify-self: start;
+  cursor: pointer;
+  align-items: center;
+  gap: 12px;
+}
+.btn-flex img{
+  display: inline-block;
+}
+
+.result,
+.result-empty{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 16px;
+}
+.result-empty p{
+  text-align: center;
+}
+.result-empty,
+.result-payment{
+  display: none;
+}
+.result-empty.ativo,
+.result-payment.ativo{
+  display: grid;
+}
+.result-grid{
+  display: grid;
+  background-color: var(--slate-901);
+  margin-top: 40px;
+  padding: 32px;
+  border-radius: 10px;
+}
+#month-pay{
+  padding-bottom: 32px;
+  padding-top: 8px;
+  border-bottom: 1px solid #9ABED5;
+}
+#p-padding{
+  padding-top: 32px;
+  padding-bottom: 8px;
+}
+.result-payment{
+  align-self: flex-start;
+}
+.result-payment h2{
+  margin-bottom: 16px;
+}
+.erro{
+  color: var(--red);
+  font: 500 0.875rem/1.50 "Plus Jakarta Sans", sans-serif;
+  margin-top: 12px;
+  display: none;
+}
+.erro.ativo{
+  display: block;
+}

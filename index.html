@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <section class="calculator-grid">
+    <div class="inputs">
+      <h1 class="present-2 color-slate-900">Mortgage Calculator</h1>
+      <form action="" id="form">
+        <div>
+          <label for="amount" class="present-4 color-slate-700">Mortgage Amount</label>
+          <div class="detail-flex">
+            <span class="color-slate-700 present-3">£</span>
+            <input type="number" id="amount" name="amount" required class="present-3 color-slate-900" step="any">
+          </div>
+          <span class="erro">This field is required</span>
+        </div>
+        <div class="input-flex">
+          <div>
+            <label for="term" class="present-4 color-slate-700">Mortgage Term</label>
+            <div class="detail-flex">
+              <input type="number" id="term" name="term" required class="present-3 color-slate-900" step="1">
+              <span class="color-slate-700 present-3">years</span>
+            </div>
+            <span class="erro">This field is required</span>
+          </div>
+          <div>
+            <label for="rate" class="present-4 color-slate-700">Interest Rate</label>
+            <div class="detail-flex">
+              <input type="number" id="rate" name="rate" required class="present-3 color-slate-900" step="0.01">
+              <span class="color-slate-700 present-3">%</span>
+            </div>
+            <span class="erro">This field is required</span>
+          </div>
+        </div>
+        <div class="mortgage-radio">
+          <p class="present-4 color-slate-700">Mortgage Type</p>
+          <div class="radio-input">
+            <input type="radio" id="repayment" name="mortage-type">
+            <label for="repayment" class="present-3 color-slate-900">Repayment</label>
+          </div>
+          <div class="radio-input">
+            <input type="radio" id="interest" name="mortage-type" required>
+            <label for="interest" class="present-3 color-slate-900">Interest Only</label>
+          </div>
+          <span class="erro" id="radio-erro">This field is required</span>
+        </div>
+        <div class="btn-flex">
+          <img src="./assets/images/icon-calculator.svg" alt="">
+          <input type="submit" value="Calculate Repayments" id="btn-submit" class="color-slate-900 present-3">
+        </div>
+        <input type="reset" value="Clear All" id="btn-reset" class="color-slate-700 present-4">
+      </form>
+    </div>
+    <div class="result">
+      <div class="result-empty ativo">
+        <img src="./assets/images/illustration-empty.svg" alt="calculator empty">
+        <h2 class="present-2 color-white">Results shown here</h2>
+        <p class="present-4 color-slate-300">Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+      </div>
+      <div class="result-payment">
+        <h2 class="present-2 color-white">Your results</h2>
+        <p class="present-4 color-slate-300">Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
+        <div class="result-grid">
+          <p class="present-4 color-slate-300">Your monthly repayments</p>
+          <span class="present-1 color-lime" id="month-pay">£1,797.74</span>
+          <p class="present-4 color-slate-300" id="p-padding">Total you'll repay over the term</p>
+          <span class="present-2 color-white" id="total-pay">£593,797.74</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./script.js" type="module"></script>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
