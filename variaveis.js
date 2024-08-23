@@ -9,6 +9,9 @@ let colorSlate900;
 let forms;
 let btnSubmit;
 let btnFlex;
+let btnClear;
+let resultEmpty;
+let resultPayment;
 export default function initVariaveis(){
     inputNumber = document.querySelectorAll('input[type="number"]');
     inputRadio = document.querySelectorAll('input[name="mortage-type"]');
@@ -21,5 +24,8 @@ export default function initVariaveis(){
     forms = document.getElementById('form');
     btnFlex = document.querySelector('.btn-flex');
     btnSubmit = document.querySelector('#btn-submit');
+    btnClear = document.querySelector('#btn-reset');
+    resultEmpty = document.querySelector('.result-empty');
+    resultPayment = document.querySelector('.result-payment');
 }
-export {inputNumber,inputRadio,colorWhite,colorRed,colorLime,colorSlate100,colorSlate700,colorSlate900,forms,btnSubmit,btnFlex};
+export {inputNumber,inputRadio,colorWhite,colorRed,colorLime,colorSlate100,colorSlate700,colorSlate900,forms,btnSubmit,btnFlex,btnClear,resultEmpty,resultPayment};

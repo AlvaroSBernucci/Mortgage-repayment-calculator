@@ -1,7 +1,9 @@
-import {btnFlex,btnSubmit,inputRadio,inputNumber,forms,colorRed,colorWhite} from './variaveis.js'
+import {btnFlex,btnSubmit,inputRadio,inputNumber,colorRed,colorWhite} from './variaveis.js'
 import {changeColor} from "./inputcolor.js";
 import { showResults } from './results.js';
 export default function initValidation(){
+
+
 
 // Submit button
     function submitEvent(){

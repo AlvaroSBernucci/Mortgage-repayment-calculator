@@ -8,18 +8,3 @@ initInputColor();
 initResults();
 
 
-
-// Validation forms
-// function handleKeyUp(event){
-//   const target = event.target;
-//   if(target.checkValidity());
-
-// }
-
-
-// forms.addEventListener('change',handleKeyUp)
-
-// Validation forms
-
-
-

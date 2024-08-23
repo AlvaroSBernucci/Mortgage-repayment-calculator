@@ -29,8 +29,8 @@
     <div class="inputs">
       <h1 class="present-2 color-slate-900">Mortgage Calculator</h1>
       <form action="" id="form">
-        <div>
-          <label for="amount" class="present-4 color-slate-700">Mortgage Amount</label>
+        <div class="input-gap">
+          <label for="amount" class="present-4 color-slate-700" id="teste">Mortgage Amount</label>
           <div class="detail-flex">
             <span class="color-slate-700 present-3">£</span>
             <input type="number" id="amount" name="amount" required class="present-3 color-slate-900" step="any">
@@ -38,7 +38,7 @@
           <span class="erro">This field is required</span>
         </div>
         <div class="input-flex">
-          <div>
+          <div class="input-gap">
             <label for="term" class="present-4 color-slate-700">Mortgage Term</label>
             <div class="detail-flex">
               <input type="number" id="term" name="term" required class="present-3 color-slate-900" step="1">
@@ -46,7 +46,7 @@
             </div>
             <span class="erro">This field is required</span>
           </div>
-          <div>
+          <div class="input-gap">
             <label for="rate" class="present-4 color-slate-700">Interest Rate</label>
             <div class="detail-flex">
               <input type="number" id="rate" name="rate" required class="present-3 color-slate-900" step="0.01">

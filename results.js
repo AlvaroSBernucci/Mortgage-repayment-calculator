@@ -1,13 +1,13 @@
+import {resultEmpty, resultPayment, btnClear } from "./variaveis.js";
 export default function initResults(){
+    function clearResults(){
+        resultEmpty.classList.add('ativo');
+        resultPayment.classList.remove('ativo');
+    }
     
-    
-
-    
+    btnClear.addEventListener('click',clearResults);
 }
-
 export function showResults(){
-    const resultEmpty = document.querySelector('.result-empty');
-    const resultPayment = document.querySelector('.result-payment');
     resultEmpty.classList.remove('ativo');
     resultPayment.classList.add('ativo');
     calculateResults();
@@ -34,3 +34,4 @@ function updateResults(monthPay,totalPay){
     totalPayText.innerText = '£' + totalPay;
 
 }
+

@@ -3,13 +3,13 @@
   grid-template-columns: 1fr 1fr;
   background-color: var(--white);
   border-radius: 20px;
-  width: 1008px;
-  min-height: 606px;
+  max-width: 1008px;
+  margin: 40px;
 }
 .result{
   background-color: var(--slate-NF);
   padding: 2.5rem;
-  border-radius: 0 20px 0 50px;
+  border-radius: 0 20px 0 100px;
 }
 .inputs{
   padding: 2.5rem;
@@ -59,6 +59,11 @@
   position: absolute;
   right: 0px;
   top: -65px;
+  cursor: pointer;
+}
+.input-gap{
+  display: grid;
+  gap: 12px;
 }
 .input-flex{
   display: flex;
@@ -133,4 +138,38 @@
 }
 .erro.ativo{
   display: block;
+}
+
+@media (max-width: 1050px){
+
+  .radio-input{
+    display: flex;
+  }
+  .radio-input label{
+    padding-right: 40%;
+  }
+
+
+}
+
+@media (max-width:900px){
+  .calculator-grid{
+    grid-template-columns: 1fr;
+  }
+  .input-flex{
+    max-width: fit-content;
+  }
+  .result{
+    border-radius: 0px 0px 20px 20px;
+  }
+}
+
+
+@media (max-width:500px){
+  .calculator-grid{
+    margin: 0px;
+  }
+  .result{
+    border-radius: 0px;
+  }
 }
