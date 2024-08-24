@@ -22,9 +22,11 @@
   border: 1px solid var(--slate-500);
   padding: 12px 16px;
   border-radius: 5px;
+  cursor: pointer;
 }
 .radio-input input{
   margin-right: 16px;
+  cursor: pointer;
 }
 .radio-input:has(input[type="radio"]:checked){
   border-color: var(--lime);
@@ -32,6 +34,7 @@
 }
 .radio-input label{
   padding-right: 60%;
+  cursor: pointer;
 }
 .detail-flex{
   display: flex;
